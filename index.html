@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel - Étudiant BUT Réseaux et Télécommunications">
+    <title>Portfolio RT3 - Ulrick Mailly</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="circle.png">
+    <!-- Google Fonts - Typographie moderne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <h1 class="logo">Portfolio</h1>
+                
+                <!-- Menu Desktop -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#bio" class="nav-link">Bio</a></li>
+                    <li><a href="#parcours" class="nav-link">Parcours</a></li>
+                    <li><a href="#expériences" class="nav-link">Expériences Pro</a></li>
+                    <li><a href="#projets" class="nav-link">Projets</a></li>
+                    <li><a href="CV_Ulrick_Mailly.pdf" class="nav-link cv-button" id="downloadCV" target="_blank">Mon CV</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Bouton Menu Mobile -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== SECTION HOME ==================== -->
+    <section id="home" class="hero">
+        <!-- Effet de fond animé -->
+        <div class="hero-bg">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-text fade-in">
+                <span class="badge">MAILLY Ulrick</span>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Mon Portfolio</span>
+                </h1>
+                <p class="hero-subtitle">Étudiant BUT Réseaux et Télécommunications</p>
+                <p class="hero-description">
+                    Des routeurs jusqu’aux antennes, je me forme à l’interconnexion des réseaux sécurisés.
+                </p>
+
+                <!-- Boutons d'action -->
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">
+                        Découvrir mes projets
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+
+                <!-- Liens sociaux -->
+                <div class="social-links">
+                    <a href="https://github.com/UmaillyRT/" target="_blank" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ulrick-mailly/" target="_blank" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:u.mailly@rt-iut.re" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION BIO ==================== -->
+    <section id="bio" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">À Propos</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="bio-grid">
+                <!-- Formation -->
+                <div class="card glass-card fade-in-scroll">
+                    <div class="card-icon">
+                        <span class="emoji">❓</span>
+                    </div>
+                    <h3 class="card-title">Qui suis-je?</h3>
+                    <p class="card-text">
+                        Étudiant en troisième année de BUT Réseaux et Télécommunications, je m’intéresse à la conception des infrastructures réseau et à leur organisation.
+Rigoureux et impliqué, j’alterne entre terrain et bureau pour mener à bien les projets qui me sont confiés.
+                    </p>
+                </div>
+
+                <!-- Passions -->
+                <div class="passions">
+                    <h3 class="passions-title">Mes Passions</h3>
+                    <div class="passion-item fade-in-scroll">
+                        <span class="passion-emoji">🏎️</span>
+                        <div>
+                            <h4>Formule 1</h4>
+                            <p>La Formule 1 représente pour moi une source constante d’innovation, d’optimisation et de recherche de performance.
+Des principes que je retrouve dans les réseaux haut débit : fiabilité, vitesse et amélioration continue.</p>
+                        </div>
+                    </div>
+                    <div class="passion-item fade-in-scroll">
+                        <span class="passion-emoji">♟️</span>
+                        <div>
+                            <h4>Échecs</h4>
+                            <p>La pratique des échecs développe chez moi la réflexion stratégique, la prise de décision et l’anticipation.
+Des compétences essentielles pour la gestion de projets et la coordination d’équipes techniques.</p>
+                        </div>
+                    </div>
+                    <div class="passion-item fade-in-scroll">
+                        <span class="passion-emoji">🎵</span>
+                        <div>
+                            <h4>Musique</h4>
+                            <p>La composition musicale me permet de développer ma créativité, ma rigueur et mon sens de l’expérimentation.
+À travers la MAO (Musique Assistée par Ordinateur), j’explore différents styles et j’apprends à structurer un projet créatif de bout en bout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION PARCOURS ==================== -->
+    <section id="parcours" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Mon Parcours</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">De la formation technique aux ambitions professionnelles</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item fade-in-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">📅 2019/2022</span>
+                        <h3>Baccalauréat Technologique STI2D</h3>
+                        <p>Découverte des fondamentaux : architecture réseau, systèmes d'exploitation, bases de la programmation.</p>
+                        <div class="tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">Systèmes embarqués</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item fade-in-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">📅 2022/2023</span>
+                        <h3>ESIROI - Cycle préparatoire intégrée</h3>
+                        <p>Développement de la rigueur scientifique, de la logique
+et des bases en ingénierie.</p>
+                        <div class="tags">
+                            <span class="tag">programmation (Java Script, C)</span>
+                            <span class="tag">Rigueur rédactionnelle (LaTeX)</span>
+                            <span class="tag">Mathématiques</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item fade-in-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">📅 2023-2024</span>
+                        <h3>BUT1 - Réseaux et Télécommunications</h3>
+                        <p>Découverte des fondamentaux : architecture réseau, systèmes d'exploitation, bases de la programmation.</p>
+                        <div class="tags">
+                            <span class="tag">Linux</span>
+                            <span class="tag">Cisco Packet Tracer</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item fade-in-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">📅 2024-2025</span>
+                        <h3>BUT2 - Approfondissement</h3>
+                        <p>Spécialisation en administration réseau, routage avancé, virtualisation et sécurité des systèmes stage en entreprise de Télécommunication.</p>
+                        <div class="tags">
+                            <span class="tag">VLANs</span>
+                            <span class="tag">OSPF/RIP</span>
+                            <span class="tag">VMware</span>
+                            <span class="tag">Wireshark</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item fade-in-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">📅 2025-2026</span>
+                        <h3>BUT3 - Expertise & Projets</h3>
+                        <p>Projets professionnalisants, alternance en entreprise de Télécommunication, et préparation à l'insertion professionnelle.</p>
+                        <div class="tags">
+                            <span class="tag">Configuration de routeurs Huawei/Nokia</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Scripting avancé</span>
+                            <span class="tag">Supervision de réseau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item fade-in-scroll">
+                    <div class="timeline-dot timeline-dot-future"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">🚀 2026+</span>
+                        <h3>Ambitions Futures</h3>
+                        <p>Devenir Chef de Projet Télécom / Déploieement Fibre Optique ou ingénieur DevOps avec une expertise en cybersécurité.</p>
+                        <div class="tags">
+                            <span class="tag">Certifications CFOT</span>
+                            <span class="tag">ENSSAT / Mines-Télécom</span>
+                            <span class="tag">Certified Telecommunications Project Management (CTPM)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ==================== SECTION EXPERIENCES PROFESSIONNELLES ==================== -->
+    <section id="expériences" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Mes expériences professionnelles</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Des tables d'écoles aux bureaux d'entreprises</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item fade-in-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">📅 juin/juillet 2023</span>
+                        <h3>Stage Ouvrier - Albioma</h3>
+                        <p>Initiation aux fondamentaux de l’exploitation industrielle : maintenance N1, lecture de PID, dépotage, rondes et tests d’équipements.</p>
+                        <div class="tags">
+                            <span class="tag">Sensibilisation aux règles HSE</span>
+                            <span class="tag">Rigueur et précision</span>
+                            <span class="tag">Autonomie progressive</span>
+                            <span class="tag">Curiosité technique</span>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item fade-in-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">📅 mars/juin 2025</span>
+                        <h3>Stage technique - Austral Télécom Services (ATS)</h3>
+                        <p>Contribution aux projets de déploiement FTTH, intégrant la compréhension des architectures réseau, la leture de synoptiques, les interventions terrain (tirage, soudure fibre) et la configuration d’équipements, en collaboration étroite avec les équipes techniques</p>
+                        <div class="tags">
+                            <span class="tag">Travail en équipe</span>
+                            <span class="tag">Tirage de fibre optique</span>
+                            <span class="tag">Rigueur et précision</span>
+                            <span class="tag">Lecture du terrain et adaptation</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item fade-in-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">📅 août 2025/2026</span>
+                        <h3>Alternance - Société Réunionnaise du Radiotéléphone (SFR Réunion)</h3>
+                        <p>Contribution à l’exploitation et à l’optimisation des infrastructures réseau : supervision via Centreon et Observium, gestion de parcs FTTS/FH, sécurité des systèmes d’information et participation à des projets d’évolution des outils vers des approches basées sur l’intelligence artificielle.</p>
+                        <div class="tags">
+                            <span class="tag">Travail collaboratif</span>
+                            <span class="tag">Esprit d’analyse et de diagnostic</span>
+                            <span class="tag">Capacité à gérer des environnements critiques</span>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <!-- ==================== SECTION PROJETS ==================== -->
+    <section id="projets" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Mes Projets</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Découvrez mes réalisations techniques</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card fade-in-scroll" onclick="openModal('modal1')">
+                    <div class="project-image">
+                        <span class="project-emoji">🏢</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Réseaux</span>
+                        <h3>Infrastructure Réseau d'Entreprise</h3>
+                        <p>Conception et déploiement d'une infrastructure réseau complète pour une PME fictive avec segmentation VLAN et redondance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">CAPEX/OPEX</span>
+                            <span class="tech-tag">VLANs</span>
+                            <span class="tech-tag">OSPF</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card fade-in-scroll" onclick="openModal('modal2')">
+                    <div class="project-image">
+                        <span class="project-emoji">🔐</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Systèmes</span>
+                        <h3>Serveur Web Sécurisé</h3>
+                        <p>Déploiement d'un serveur web LAMP sécurisé avec certificats SSL, firewall et monitoring.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Apache</span>
+                            <span class="tech-tag">SSL/TLS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card fade-in-scroll" onclick="openModal('modal3')">
+    <div class="project-image">
+        <span class="project-emoji">📡</span>
+    </div>
+    <div class="project-content">
+        <span class="project-category">Télécommunications</span>
+        <h3>Réception Météo SDR</h3>
+        <p>Station de réception au sol pour capter et décoder les images des satellites NOAA en temps réel.</p>
+        <div class="project-tech">
+            <span class="tech-tag">RTL-SDR</span>
+            <span class="tech-tag">SDRSharp</span>
+            <span class="tech-tag">WXtoimg</span>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ==================== MODALES PROJETS ==================== -->
+    
+    <!-- Modale Projet 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Infrastructure Réseau d'Entreprise</h2>
+                <button class="modal-close" onclick="closeModal('modal1')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>💼 Contexte du Projet</h3>
+                    <p>Projet de BUT2 réalisé en groupe de 3.
+                    Objectif : simuler un réseau d'entreprise avec 3 sites interconnectés.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>💻 Description Technique</h3>
+                    <p>Conception et déploiement d'une infrastructure réseau complète pour une PME fictive avec segmentation VLAN et redondance.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>🏆 Compétences Mobilisées</h3>
+                    <ul>
+                        <li>✓ Analyse des besoins réseau</li>
+                        <li>✓ Configuration de routeurs et switches Cisco</li>
+                        <li>✓ Mise en place de protocoles de routage dynamique (OSPF)</li>
+                        <li>✓ Sécurisation des accès (ACL, port-security)</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>🛠️ Technologies Utilisées</h3>
+                    <div class="modal-tags">
+                        <span class="modal-tag">Cisco</span>
+                        <span class="modal-tag">VLANs</span>
+                        <span class="modal-tag">OSPF</span>
+                        <span class="modal-tag">QoS</span>
+                    </div>
+                </div>
+
+                <div class="modal-section reflection">
+                    <h3>💭 Réflexion Personnelle</h3>
+                    <p><em>"Ce projet m'a fait passer d'une vision purement technique à une approche stratégique de l'infrastructure. En tant que Chargé d'affaires, j'ai compris qu'une refonte réseau ne consiste pas seulement à installer des équipements, mais à aligner la technologie sur les besoins réels de l'entreprise. La coordination de la migration multi-sites m'a particulièrement appris à gérer les contraintes de production et à anticiper les risques d'interruption pour les utilisateurs finaux."</em></p>
+                </div>
+
+                <a href="https://github.com/UmaillyRT/R4.ROM.10-Op-rateur-de-t-l-com" target="_blank" class="btn btn-primary modal-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Voir le code sur GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale Projet 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Serveur Web Sécurisé</h2>
+                <button class="modal-close" onclick="closeModal('modal2')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>💼 Contexte du Projet</h3>
+                    <p>Projet individuel de BUT3. Hébergement d'un site de streaming avec garantie de QoS de sécurité strictes.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>💻 Description Technique</h3>
+                    <p>Déploiement d'un serveur web LAMP sécurisé avec certificats SSL, firewall et monitoring.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>🏆 Compétences Mobilisées</h3>
+                    <ul>
+                        <li>✓ Administration Linux (Debian)</li>
+                        <li>✓ Configuration Nginx et RTMP</li>
+                        <li>✓ Gestion de la Qalité de Service</li>
+                        <li>✓ Génération et installation de certificats SSL</li>
+                        <li>✓ Durcissement système (fail2ban, configuration firewall)</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>🛠️ Technologies Utilisées</h3>
+                    <div class="modal-tags">
+                        <span class="modal-tag">Linux</span>
+                        <span class="modal-tag">Nginx</span>
+                        <span class="modal-tag">SSL/TLS</span>
+                        <span class="modal-tag">Iptables</span>
+                    </div>
+                </div>
+
+                <div class="modal-section reflection">
+                    <h3>💭 Réflexion Personnelle</h3>
+                    <p><em>"J'ai appris l'importance des bonnes pratiques de sécurité dès la conception. L'automatisation via scripts Bash m'a fait gagner un temps précieux."</em></p>
+                </div>
+
+                <a href="https://github.com/UmaillyRT/R5.ROM.09-SERVICES-MULTIM-DIA" target="_blank" class="btn btn-primary modal-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Voir le code sur GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale Projet 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Réception Images Météo NOAA</h2>
+                <button class="modal-close" onclick="closeModal('modal3')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>💼 Contexte du Projet</h3>
+                    <p>Projet réalisé dans le cadre du module Services Multimédia (R5.ROM.09). L'objectif était de mettre en place une station de réception au sol pour capter et décoder les signaux des satellites météorologiques défilants (NOAA).</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>💻 Description Technique</h3>
+                    <p>Mise en œuvre d'une chaîne de réception radio-logicielle (SDR). Utilisation d'une clé RTL-SDR et d'une antenne hélicoïdale pour intercepter le signal APT (Automatic Picture Transmission) vers 137 MHz, suivi du décodage pour reconstruire l'image météo.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>🏆 Compétences Mobilisées</h3>
+                    <ul>
+                        <li>✓ Configuration d'une chaîne SDR (Software Defined Radio)</li>
+                        <li>✓ Tracking satellite et prédiction de passages</li>
+                        <li>✓ Traitement du signal et analyse spectrale</li>
+                        <li>✓ Diagnostic matériel (Antennes et connectique)</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>🛠️ Technologies Utilisées</h3>
+                    <div class="modal-tags">
+                        <span class="modal-tag">SDRSharp</span>
+                        <span class="modal-tag">WXtoimg</span>
+                        <span class="modal-tag">Orbitron</span>
+                        <span class="modal-tag">SatDump</span>
+                        <span class="modal-tag">RTL-SDR</span>
+                    </div>
+                </div>
+
+                <div class="modal-section reflection">
+                    <h3>💭 Réflexion Personnelle</h3>
+                    <p><em>"Ce projet a mis en évidence l'importance critique de la qualité de l'antenne dans les télécommunications. Malgré des difficultés matérielles, réussir à capter un signal provenant de l'espace reste une démonstration technique fascinante."</em></p>
+                </div>
+
+                <a href="https://github.com/UmaillyRT/Projet-R-ception-Images-M-t-o-NOAA" target="_blank" class="btn btn-primary modal-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Voir le code sur GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SECTION COMPÉTENCES ==================== -->
+    <section id="competences" class="section section-dark">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title gradient-text">Expertises Techniques</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card fade-in-scroll">
+                <div class="skill-icon">🌐</div>
+                <h3>Administration Réseaux</h3>
+                <ul class="skill-list">
+                    <li>Routage & Switching (Cisco, Huawei)</li>
+                    <li>Configuration de VLANs & Trunking</li>
+                    <li>Protocoles TCP/IP, OSPF, BGP</li>
+                    <li>Gestion d'infrastructures LAN/WAN</li>
+                </ul>
+            </div>
+
+            <div class="skill-card fade-in-scroll">
+                <div class="skill-icon">🖥️</div>
+                <h3>Systèmes & Virtualisation</h3>
+                <ul class="skill-list">
+                    <li>Administration Linux (Debian, Ubuntu)</li>
+                    <li>Windows Server & Active Directory</li>
+                    <li>Conteneurisation Docker & Docker Compose</li>
+                    <li>Virtualisation VMware & Proxmox</li>
+                </ul>
+            </div>
+
+            <div class="skill-card fade-in-scroll">
+                <div class="skill-icon">🛡️</div>
+                <h3>Cybersécurité</h3>
+                <ul class="skill-list">
+                    <li>Configuration de Firewalls (pfsense, Fortinet)</li>
+                    <li>Mise en place de VPN (OpenVPN, IPsec)</li>
+                    <li>Analyse de vulnérabilités & Hardening</li>
+                    <li>Supervision de sécurité (SIEM, logs)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ==================== SECTION CONTACT ==================== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Contactez-moi</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">N'hésitez pas à me contacter pour toute opportunité</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Email -->
+                <a href="mailto:u.mailly@rt-iut.re" class="contact-card fade-in-scroll">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>u.mailly@rt-iut.re</p>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/ulrick-mailly" target="_blank" class="contact-card fade-in-scroll">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Voir mon profil</p>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/UmaillyRT" target="_blank" class="contact-card fade-in-scroll">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Mes repositories</p>
+                </a>
+            </div>
+
+            <div class="contact-cta fade-in-scroll">
+                <p>Disponible pour un stage, une alternance ou un projet collaboratif</p>
+                <a href="mailto:u.mailly@rt-iut.re" class="btn btn-primary">Envoyez-moi un message</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MAILLY Ulrick - BUT Réseaux et Télécommunications RT3</p>
+            <p class="footer-sub">Créé avec HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="script.js"></script>
+</body>
+</html>
